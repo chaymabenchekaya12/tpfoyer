@@ -18,7 +18,7 @@ import java.util.List;
 public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String idReservation;
+    private Long idReservation;
     private Date anneeUniversitaire;
     private boolean estValide;
 @ManyToMany

@@ -20,6 +20,6 @@ public class Bloc {
     private Long capaciteBloc;
     @ManyToOne()
     private Foyer foyer; //classe en majus
-    @OneToMany(mappedBy = "blocs",cascade = CascadeType.ALL,fetch =FetchType.EAGER) // bloc1:ilisalitou f chambre ;;eager va afficher tous liste de chambra
+    @OneToMany(mappedBy = "bloc",cascade = CascadeType.ALL,fetch =FetchType.EAGER) // bloc1:ilisalitou f chambre ;;eager va afficher tous liste de chambra
     private List<Chambre> chambres;//chambre normalement class en majus
 }
