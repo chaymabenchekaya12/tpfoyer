@@ -25,6 +25,7 @@ public class Etudiant
     @JsonFormat(pattern = "yyy-MM-dd")
     private Date dateNaissance;
     private String prenomEt;
+
     @ManyToMany(mappedBy="etudiants",cascade =CascadeType.ALL)
     private List<Reservation> reservations;
 }

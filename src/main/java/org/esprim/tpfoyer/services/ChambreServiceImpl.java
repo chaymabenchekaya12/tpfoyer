@@ -35,7 +35,6 @@ public class ChambreServiceImpl implements IChambreService {
         chambreRepository.deleteById(chambreId);
 
     }
-
     @Override
     public Chambre modifyChambre(Chambre chambre) {
         return chambreRepository.save(chambre);

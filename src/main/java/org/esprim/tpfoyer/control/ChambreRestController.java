@@ -13,6 +13,7 @@ import java.util.List;
 //ce classe autowired avec controlleur
 public class ChambreRestController {
     IChambreService chambreService;
+
     // http://localhost:13660/tpfoyer/chambre/retrieve-all-chambres
     @GetMapping("/retrieve-all-chambres")
     public List<Chambre> getChambres() {
